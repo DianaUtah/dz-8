@@ -15,5 +15,9 @@ public class Main {
         group.addTask("Learn encapsulation");
         group.addTask("Complete project");
 
+        group.removeStudent(student2);
+
+        group.renameStudent(student1, "Alicia", "Smithson");
+
     }
 }

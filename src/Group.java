@@ -12,8 +12,17 @@ class Group {
         this.tasks = new ArrayList<>();
     }
 
-    public void addStudent (Student student) {
+    public void addStudent(Student student) {
         students.add(student);
+    }
+
+    public void removeStudent(Student student) {
+        students.remove(student);
+    }
+
+    public void renameStudent(Student student, String newFirstName, String newLastName) {
+        student.setFirstName(newFirstName);
+        student.setLastName(newLastName);
     }
     public void addTask (String task) {
         tasks.add(task);
